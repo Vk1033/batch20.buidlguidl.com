@@ -4,6 +4,52 @@
  */
 import { GenericContractsDeclaration } from "~~/utils/scaffold-eth/contract";
 
-const deployedContracts = {} as const;
+const deployedContracts = {
+  42161: {
+    Metadata: {
+      address: "0xa170c92954699B081718E5c4e9F6787C1E5c4626",
+      abi: [
+        {
+          inputs: [],
+          name: "getColor",
+          outputs: [
+            {
+              internalType: "uint8",
+              name: "",
+              type: "uint8",
+            },
+            {
+              internalType: "uint8",
+              name: "",
+              type: "uint8",
+            },
+            {
+              internalType: "uint8",
+              name: "",
+              type: "uint8",
+            },
+          ],
+          stateMutability: "view",
+          type: "function",
+        },
+        {
+          inputs: [],
+          name: "getName",
+          outputs: [
+            {
+              internalType: "string",
+              name: "",
+              type: "string",
+            },
+          ],
+          stateMutability: "view",
+          type: "function",
+        },
+      ],
+      inheritedFunctions: {},
+      deployedOnBlock: 387109409,
+    },
+  },
+} as const;
 
 export default deployedContracts satisfies GenericContractsDeclaration;
